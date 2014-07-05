@@ -34,7 +34,7 @@ if ($bPostFromSubmit)
 		for($i=0;$i<$_POST['txtNumberOfWords'];$i++)
 		{
 			$newWord=$ArrayWords[rand(0,$countWords-1)];
-			while(!(strpos($password,$newWord)===false))
+			while(!(strpos(strtolower($password),$newWord)===false))
 			{
 				$newWord=$ArrayWords[rand(0,$countWords-1)];
 			}
