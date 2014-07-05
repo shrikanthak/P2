@@ -16,7 +16,7 @@
 
 	<body>
 		<h1 style='font-weight:bold;text-align:center'>xkcd Password Generator</h1>
-		<div style='margin-left:auto;margin-right:auto'>
+		<div class='passworddiv'>
 			<?php if($password!=''):?>
 				<p class='password'><?=$password?></p><br>
 			<?php elseif($errorMessage != ''): ?>	
